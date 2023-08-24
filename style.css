@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&family=Prompt:wght@600&display=swap');
+
+/* 
+font-family: 'Manrope', sans-serif;
+font-family: 'Prompt', sans-serif; 
+*/
+:root {
+    /* colors */
+    --bg: #222222;
+    --l_bg: #333;
+    --h_text: #bac964;
+    --l_text: #858585;
+    --text: white;
+    --s_text: #2c3e50;
+    --h_btn: #bac964;
+    --btn: #6c757d;
+    /* fonts */
+    --font: 'Manrope';
+
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+button {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    font-size: 0.75rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5rem;
+    letter-spacing: 0.2rem;
+    border: none;
+    outline: none;
+    margin-right: .5rem;
+    text-transform: uppercase;
+}
+
+#button_highlighted {
+    background-color: var(--h_btn);
+    color: var(--text);
+}
+
+#button_light {
+    background-color: var(--btn);
+    color: var(--text);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.top {
+    background-image: url(images/faceback.avif);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.def {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    flex-basis: 71.25rem;
+}
+
+.container_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    color: var(--text);
+    transition: 0.3s;
+}
+
+/* header ul li a:hover {
+    color: var(--h_text);
+} */
+.txt_container {
+    text-align: center;
+    width: 100%;
+}
+
+.txt_light {
+    color: var(--text);
+    font-size: 4em;
+    font-family: 'Manrope', sans-serif;
+}
+
+.txt_bold {
+    color: var(--text);
+    font-size: 4rem;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 800;
+}
+
+.txt_small {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.row {
+    width: 100%;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    color: white;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.categories {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories ul {
+    list-style-type: none;
+}
+
+.categories ul li {
+    display: inline-block;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    color: var(--text);
+    transition: 0.3s;
+}
+
+#active, .categories ul li a:hover {
+    color: var(--h_text);
+}
+
+.categories_content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+    flex-basis: 21.875;
+    margin: 10px;
+    height: auto;
+    margin-bottom: 1.25rem;
+}
+
+.box .content_img {
+    width: 21.875rem;
+    height: 21.875rem;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.box .content_texts {
+    text-align: center;
+}
+
+.box .content_texts h3 {
+    color: var(--text);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+}
+
+.box .content_texts h5 {
+    color: var(--l_text);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+
+
+/* .my_resume  */
+.col_box {
+    display: flex;
+    width: 100%;
+}
+
+/* .my_resume  */
+.col {
+    width: 50%;
+    padding: 0.5rem;
+}
+
+.my_resume .col h3 {
+    font-family: 'Manrope', sans-serif;
+    color: var(--text);
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.my_resume .col .item_box {
+    padding: 2rem;
+    background-color: var(--l_bg);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.my_resume .col span {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.my_resume .col p, .my_resume .col .uv {
+    color: var(--l_text);
+    font-family: 'Manrope', sans-serif;
+    text-align: justify;
+}
+
+.my_resume .col p {
+    margin-bottom: 1rem;
+}
+
+.my_resume .col h2 {
+    font-family: 'Manrope', sans-serif;
+    color: var(--h_text);
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+
+.my_resume .col .date {
+    font-size: 0.75rem;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.about {
+    margin: 10rem 0;
+}
+
+
+.about .col_box .col_about {
+    padding: 7rem 2rem;
+}
+
+.about .col_box .col_img {
+    width: ;
+}
+
+.about .col_box .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .col_box .col p {
+    color: var(--l_text);
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 1rem;
+    text-align: justify;
+
+}
+
+.about .col_box .col .big {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.client_Testimonial .container .col_box .com_box {
+    background-color: var(--l_bg);
+    padding: 2rem;
+
+}
+
+.client_Testimonial .container .col_box .quotes {
+    display: flex;
+    margin-bottom: 3rem;
+
+}
+
+.client_Testimonial .container .col_box .img_box {
+    width: 50px;
+    height: 50px;
+    margin: .5rem 2rem 0 0;
+}
+
+.client_Testimonial .container .col_box .img_box img {
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.client_Testimonial .container .col_box .com_box {
+    background-color: var(--l_bg);
+    padding: 2rem;
+    position: relative;
+    border-radius: .5rem;
+}
+
+.client_Testimonial .container .col_box .com_box p {
+    margin-bottom: 1rem;
+
+}
+
+.client_Testimonial .container .col_box .com_box p, .client_Testimonial .container .col_box .com_box span {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    color: var(--l_text);
+
+}
+
+.client_Testimonial .container .col_box .com_box::before {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    left: -15px;
+    border-width: 0 20px 20px 0;
+    border-style: solid;
+    border-color: transparent #333 transparent transparent;
+}
