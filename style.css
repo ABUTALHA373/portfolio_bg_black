@@ -98,11 +98,12 @@ header ul li {
 header ul li a {
     text-decoration: none;
     font-family: 'Manrope', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     padding: 1rem 1rem;
     text-transform: uppercase;
     color: var(--text);
     transition: 0.3s;
+    letter-spacing: .15rem;
 }
 
 /* header ul li a:hover {
@@ -132,6 +133,7 @@ header ul li a {
     font-family: 'Manrope', sans-serif;
     font-size: 1rem;
     margin: 1rem;
+    letter-spacing: .15rem;
 }
 
 .row {
@@ -141,6 +143,11 @@ header ul li a {
     color: white;
     text-align: center;
     font-family: 'Manrope', sans-serif;
+
+}
+
+.row h1 {
+    font-size: 1.8rem;
 }
 
 .categories {
@@ -284,9 +291,7 @@ header ul li a {
     padding: 7rem 2rem;
 }
 
-.about .col_box .col_img {
-    width: ;
-}
+.about .col_box .col_img {}
 
 .about .col_box .col img {
     width: 100%;
@@ -297,7 +302,7 @@ header ul li a {
 .about .col_box .col p {
     color: var(--l_text);
     font-family: 'Manrope', sans-serif;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     text-align: justify;
 
 }
@@ -358,4 +363,74 @@ header ul li a {
     border-width: 0 20px 20px 0;
     border-style: solid;
     border-color: transparent #333 transparent transparent;
+}
+
+.services .service_box {
+    display: flex;
+    flex-wrap: ;
+}
+
+.services .service_box .service_item {
+    background-color: var(--l_bg);
+    flex-basis: 21.875rem;
+    margin: .625rem;
+    height: auto;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+}
+
+.services .service_box .item_icon {
+    width: 4.375rem;
+    height: 4.375rem;
+    background-color: var(--h_btn);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1.25rem auto;
+}
+
+.services .service_box .item_icon i {
+    font-size: 2.5rem;
+}
+
+.services .service_box .item_text {
+    color: var(--text);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.services .service_box .item_text p {
+    margin-bottom: 0.625rem;
+    line-height: 1.5;
+}
+
+.plink {
+    display: inline;
+    color: var(--h_text);
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.services .service_box .item_text h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: .625rem;
+}
+
+.services .service_box .item_text i {
+    color: var(--h_text);
+    font-size: 0.75rem;
+    transition: 0.4s;
+}
+
+.services .plink:hover~i {
+    margin-left: 20px;
+
 }
